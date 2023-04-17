@@ -1,0 +1,20 @@
+openapi: "3.0.2"
+info:
+  title: "My API"
+  description: "Description of my API"
+  version: "1.0.0"
+servers:
+  - url: "http://localhost:8000/api/"
+paths:
+  /my-api-endpoint/:
+    get:
+      operationId: "myApiEndpointGet"
+      summary: "Summary of my API endpoint"
+      description: "Description of my API endpoint"
+      responses:
+        '200':
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                type: object
